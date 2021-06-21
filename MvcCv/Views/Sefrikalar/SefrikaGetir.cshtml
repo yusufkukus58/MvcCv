@@ -1,0 +1,23 @@
+﻿@model MvcCv.Models.Entity.TblSerfikalarim
+@{
+    ViewBag.Title = "SefrikaGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h4>Sefrika düzenleme sayfası</h4>
+<br />
+
+<form method="post">
+
+
+    @Html.Label("Sefrika acıklaması")
+    @Html.TextBoxFor(x => x.Aciklama, new { @class = "form-control" })
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+
+
+    <button class="btn btn-danger">Güncelle</button>
+</form>
+
+
